@@ -1,0 +1,64 @@
+# bu çeviri bana ait değil.
+
+tr:
+  errors:
+    messages:
+      expired: "süresi sona erdi, lütfen yenisini isteyin"
+      not_found: "bulunamadı"
+      already_confirmed: "zaten onaylandı, lütfen tekrar giriş yapmayı deneyin"
+      not_locked: "kilitlenmedi"
+      not_saved: "maalesef kayıt olurken şu hatalar oluştu:"
+ 
+  devise:
+    failure:
+      already_authenticated: 'zaten giriş yaptın :)'
+      unauthenticated: 'devam etmeden önce giriş yapman veya kayıt olman gerekmekte'
+      unconfirmed: 'Devam etmeden önce hesabınızı onaylamalısınız.'
+      locked: 'Hesabınız kilitlendi.'
+      invalid: 'email ile girdiğiniz parola uyuşmuyor'
+      invalid_token: 'Geçesiz onaylama kodu.'
+      timeout: 'Oturumunuz sona erdi. Devam etmek için lütfen giriş yapın.'
+      inactive: 'Hesabınız henüz etkinleştirilmedi.'
+      not_found_in_database: 'böyle bir kullanıcı bulamadık'  
+      
+    sessions:
+      signed_in: 'giriş başarılı, tadını çıkar :)'
+      signed_out: 'umarım en kısa zamanda tekrar gelirsin :('
+      
+    passwords:
+      send_instructions: 'Bir kaç dakika içinde parolanızı nasıl sıfırlayacağız hakkında bir email alacaksınız.'
+      updated: 'Parolanız başarıyla değiştirildi. Şu anda giriş yapmış bulunuyorsunuz.'
+      updated_not_active: 'Parolanız başarıyla değiştirildi.'
+      send_paranoid_instructions: 'Email adresiniz veritabanımızda kayıtlı ise email adresinize parola kurtarma linki göndereceğiz.'
+      
+    confirmations:
+      send_instructions: 'Bir kaç dakika içinde hesabınızı onaylama hakkında bir email alacaksınız.'
+      send_paranoid_instructions: 'Email adresiniz veritabanımızda kayıtlı ise email adresinize hesabınızı onaylama hakkında bir email göndereceğiz.'
+      confirmed: 'Hesabınız başarıyla onaylandı. Şu anda giriş yapmış bulunuyorsunuz.'
+      
+    registrations:
+      signed_up: 'hoş geldin! tadını çıkar :)'
+      signed_up_but_unconfirmed: 'Email adresinize onaylama linki içeren bir mesaj gönderdik. Lütfen hesabınızını aktif etmek için linki kullanın.'
+      signed_up_but_inactive: 'Başarılı kayıt oldunuz. Ancak hesabınızı henüz aktif yapmadığınız için oturum açamıyorsunuz.'
+      signed_up_but_locked: 'Başarılı kayıt oldunuz. Ancak hesabınız kitli olduğu için oturum açamıyorsunuz.'
+      updated: 'hesabını başarıyla güncelledin'
+      update_needs_confirmation: 'Hesabınızı başarıyla güncellediniz, fakat email adresinizi onaylamamız gerekmektedir. Lütfen emailinizi kontrol edin ve email adresinizi onaylamak için onay linkine tıklayın.'
+      destroyed: 'bunu üzülerek söylüyorum fakat, hesabını kapatma işlemin tamamlandı. güle güle'
+    
+    unlocks:
+      send_instructions: 'Bir kaç dakika içinde hesabınızın kilitini nasıl kaldıracağınız hakkında bir email alacaksınız.'
+      unlocked: 'Hesabınız başarıyla açıldı. Şu anda giriş yapmış bulunuyorsunuz.'
+      send_paranoid_instructions: 'Bir hesabınız varsa bir kaç dakika içinde hesabınızın kilitini nasıl açacağınız hakkında bir email alacaksınız.'
+      
+    omniauth_callbacks:
+      success: '%{kind} hesabından başarıyla onaylandı.'
+      failure: '"%{reason}" olmasından dolayı %{kind} hesabından onaylama yapamazsınız.'
+      mailer:
+        confirmation_instructions:
+          subject: 'Onaylama talimatları'
+        
+        reset_password_instructions:
+          subject: 'Parola sıfırlama talimatları'
+        
+        unlock_instructions:
+          subject: 'Kilit açma talimatları'

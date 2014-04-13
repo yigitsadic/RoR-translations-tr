@@ -1,0 +1,56 @@
+tr:
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "yarım dakika"
+      less_than_x_seconds:
+        one: "bir saniye önce"
+        other: "%{count} saniye önce"
+      x_seconds:
+        one: "1 saniye"
+        other: "%{count} saniye"
+      less_than_x_minutes:
+        one: "bir dakikadan az"
+        other: "%{count} dakikadan az"
+      x_minutes:
+        one: "1 dakika"
+        other: "%{count} dakika"
+      about_x_hours:
+        one: "1 saat kadar"
+        other: "%{count} saat kadar"
+      x_days:
+        one: "1 gün"
+        other: "%{count} gün"
+      about_x_months:
+        one: "1 ay kadar"
+        other: "%{count} ay kadar"
+      x_months:
+        one: "1 ay"
+        other: "%{count} ay"
+      about_x_years:
+        one: "1 yıl kadar"
+        other: "%{count} yıl kadar"
+      over_x_years:
+        one: "1 yıldan fazla"
+        other: "%{count} yıldan fazla"
+      almost_x_years:
+        one: "neredeyse 1 yıl"
+        other: "neredeyse %{count} yıl"
+    prompts:
+      year: "Yıl"
+      month: "Ay"
+      day: "Gün"
+      hour: "Saat"
+      minute: "Dakika"
+      second: "Saniye"
+
+  helpers:
+    select:
+      # Default value for :prompt => true in FormOptionsHelper
+      prompt: "Lütfen seçin"
+
+    # Default translation keys for submit and button FormHelper
+    submit:
+      create: '%{model} Oluştur'
+      update: '%{model} Güncelle'
+      submit: '%{model} Kaydet'

@@ -1,0 +1,18 @@
+tr:
+  views:
+    pagination:
+      first: "&laquo; İlk"
+      last: "Son &raquo;"
+      previous: "Geri"
+      next: "İleri"
+      truncate: "&hellip;"
+ 
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name} bulunamadı"
+          one: "<b>1</b> %{entry_name} gösteriliyor"
+          other: "<b>Toplamda %{count}</b> %{entry_name} gösteriliyor"
+      more_pages:
+        display_entries: "<b>%{first}&nbsp;-&nbsp;%{last}</b> arası %{entry_name} gösteriliyor, toplamda <b>%{total} %{entry_name} var"

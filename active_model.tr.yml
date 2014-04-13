@@ -1,0 +1,28 @@
+tr:
+  errors:
+    format: "%{attribute} %{message}"
+
+    # The values :model, :attribute and :value are always available for interpolation
+    # The value :count is available when applicable. Can be used for pluralization.
+    messages:
+      inclusion: "alanı listede yok"
+      exclusion: "alanı rezerve"
+      invalid: "hatalı"
+      confirmation: "%{attribute} alanı ile uyuşmuyor"
+      accepted: "kabul edilmeli"
+      empty: "alanı boş olamaz"
+      blank: "alanı boş olamaz"
+      present: "alanı boş bırakılmalı"
+      too_long: "alanı çok uzun (maksimum değeri %{count} karakter)"
+      too_short: "alanı çok kısa (minimum değeri %{count} karakter)"
+      wrong_length: "alanı yanlış uzunlukta (%{count} karakter olmalıydı)"
+      not_a_number: "alanı numara değil"
+      not_an_integer: "alanı sayı değil"
+      greater_than: "%{count} sayısından yüksek olmalı"
+      greater_than_or_equal_to: "%{count} sayısıyla eşit veya yüksek olmalı"
+      equal_to: "%{count} sayısına eşit olmalı"
+      less_than: "%{count} sayısından alçak olmalı"
+      less_than_or_equal_to: "%{count} sayısıyla eşit veya alçak olmalı"
+      other_than: "%{count} sayısından başka olmalı"
+      odd: "tek olmalı"
+      even: "çift olmalı"

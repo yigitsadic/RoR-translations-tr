@@ -1,0 +1,138 @@
+tr:
+  date:
+    formats:
+      # Format için strftime parametrelerini kullanabilirsin
+      # Eğer bir format belirtilmemişse varsayılanı kullanır
+      # Başka formatlar oluşturabilirsin!
+      
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+    day_names: [Pazar, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi]
+    abbr_day_names: [Paz, Pzt, Sal, Çrş, Prş, Cum, Cts]
+
+    # baştaki nil karaktere dikkat et, unutma 0. ay yok, fakat 1. ay var :)
+    
+    month_names: [~, Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık]
+    abbr_month_names: [~, Ock, Şbt, Mrt, Nis, Mys, Haz, Tem, Ağs, Eyl, Ekm, Kas, Ara]
+    
+    # date_select ve datetime_select alanlarında kullanılıyor
+    order:
+      - day
+      - month
+      - year
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "öğleden önce"
+    pm: "öğleden sonra"
+
+# array.to_sentence kullanılıyor
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " ve "
+      last_word_connector: " ve "
+  number:
+    # NumberHelper.number_to_delimited() kullanılıyor
+    # Ayrıca 'currency', 'percentage', 'precision' ve 'human' için varsayılan değerler var
+    
+    format:
+      # Kesirler için
+      separator: ","
+      # 3 haneden uzunlar için
+      delimiter: "."
+      # Kesir hanesinde kaç rakam olacak
+      precision: 2
+      # If set to true, precision will mean the number of significant digits instead
+      # of the number of decimal digits (1234 with precision 2 becomes 1200, 1.23543 becomes 1.2)
+      significant: false
+      # virgülden sonra 0'ları sil? örn: 1,200 => 1,2
+      strip_insignificant_zeros: false
+
+    # Used in NumberHelper.number_to_currency()
+    currency:
+      format:
+        # para birimi, %n sayıyı %u ise para birimini ifade ediyor.
+        format: "%n %u"
+        unit: "₺"
+        # These five are to override number.format and are optional
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    # Used in NumberHelper.number_to_percentage()
+    percentage:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+        # significant: false
+        # strip_insignificant_zeros: false
+        format: "%%n"
+
+    # Used in NumberHelper.number_to_rounded()
+    precision:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+        # significant: false
+        # strip_insignificant_zeros: false
+
+    # Used in NumberHelper.number_to_human_size() and NumberHelper.number_to_human()
+    human:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      # Used in number_to_human_size()
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one: "Bayt"
+            other: "Bayt"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      # Used in NumberHelper.number_to_human()
+      decimal_units:
+        format: "%n %u"
+        # Decimal units output formatting
+        # By default we will only quantify some of the exponents
+        # but the commented ones might be defined or overridden
+        # by the user.
+        units:
+          # femto: Quadrillionth
+          # pico: Trillionth
+          # nano: Billionth
+          # micro: Millionth
+          # mili: Thousandth
+          # centi: Hundredth
+          # deci: Tenth
+          unit: ""
+          ten:
+            one: On
+            #other: Onlarca
+          hundred: Yüz
+          thousand: Bin
+          million: Milyon
+          billion: Milyar
+          trillion: Trilyon
+          #quadrillion: Quadrillion
+

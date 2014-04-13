@@ -1,0 +1,9 @@
+tr:
+  formtastic:
+    yes: 'Evet'
+    no: 'Hayır'
+    create: 'Oluştur'
+    required: 'Boş bırakılamaz'
+    submit: 'Gönder'
+    update: 'Güncelle'
+    cancel: 'İptal'
